@@ -1,0 +1,124 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "Rahul Sharma",
+            "age": 20,
+            "gender": "Male",
+            "email": "rahul@example.com",
+            "phone": "9876543210",
+            "course": "B.Tech IT",
+            "semester": 5,
+            "cgpa": 8.5,
+            "city": "Kolkata"
+        },
+        {
+            "id": 2,
+            "name": "Priya Das",
+            "age": 21,
+            "gender": "Female",
+            "email": "priya@example.com",
+            "phone": "9876543211",
+            "course": "B.Tech CSE",
+            "semester": 6,
+            "cgpa": 9.1,
+            "city": "Howrah"
+        },
+        {
+            "id": 3,
+            "name": "Amit Roy",
+            "age": 20,
+            "gender": "Male",
+            "email": "amit@example.com",
+            "phone": "9876543212",
+            "course": "BCA",
+            "semester": 4,
+            "cgpa": 7.8,
+            "city": "Durgapur"
+        },
+        {
+            "id": 4,
+            "name": "Sneha Ghosh",
+            "age": 22,
+            "gender": "Female",
+            "email": "sneha@example.com",
+            "phone": "9876543213",
+            "course": "B.Tech IT",
+            "semester": 8,
+            "cgpa": 8.9,
+            "city": "Siliguri"
+        },
+        {
+            "id": 5,
+            "name": "Arjun Sen",
+            "age": 19,
+            "gender": "Male",
+            "email": "arjun@example.com",
+            "phone": "9876543214",
+            "course": "B.Sc Computer Science",
+            "semester": 2,
+            "cgpa": 7.5,
+            "city": "Kharagpur"
+        },
+        {
+            "id": 6,
+            "name": "Ananya Paul",
+            "age": 21,
+            "gender": "Female",
+            "email": "ananya@example.com",
+            "phone": "9876543215",
+            "course": "B.Tech CSE",
+            "semester": 5,
+            "cgpa": 9.4,
+            "city": "Kolkata"
+        },
+        {
+            "id": 7,
+            "name": "Sourav Dey",
+            "age": 20,
+            "gender": "Male",
+            "email": "sourav@example.com",
+            "phone": "9876543216",
+            "course": "BCA",
+            "semester": 4,
+            "cgpa": 8.0,
+            "city": "Asansol"
+        },
+        {
+            "id": 8,
+            "name": "Riya Banerjee",
+            "age": 22,
+            "gender": "Female",
+            "email": "riya@example.com",
+            "phone": "9876543217",
+            "course": "B.Tech IT",
+            "semester": 7,
+            "cgpa": 8.7,
+            "city": "Bardhaman"
+        },
+        {
+            "id": 9,
+            "name": "Kunal Mukherjee",
+            "age": 19,
+            "gender": "Male",
+            "email": "kunal@example.com",
+            "phone": "9876543218",
+            "course": "B.Tech CSE",
+            "semester": 2,
+            "cgpa": 7.9,
+            "city": "Haldia"
+        },
+        {
+            "id": 10,
+            "name": "Ishita Roy",
+            "age": 21,
+            "gender": "Female",
+            "email": "ishita@example.com",
+            "phone": "9876543219",
+            "course": "B.Sc Computer Science",
+            "semester": 6,
+            "cgpa": 9.0,
+            "city": "Kolkata"
+        }
+    ]
+}

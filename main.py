@@ -1,5 +1,5 @@
-from fastapi import FastAPI, HTTPException, Path, Query
-from helper import read
+from fastapi import FastAPI, HTTPException, Path, Query, Body
+from helper import read, add
 app = FastAPI()
 
 
@@ -18,3 +18,17 @@ def read_item(name: str = Path(..., description="The name to be greeted"),price:
     # else:
     return {"price":price, 'name':name, 'author':author}
 
+@app.post('/add')
+def add_student(name:str = Body(..., description="The name of the student"), age:int = Body(..., description="The age of the student"), gender:str = Body(..., description="The gender of the student"), email:str = Body(..., description="The email of the student"), phone:str = Body(..., description="The phone number of the student"), course:str = Body(..., description="The course of the student"), semester:int = Body(..., description="The semester of the student"), cgpa:float = Body(..., description="The cgpa of the student"), city:str = Body(..., description="The city of the student")):
+    student = {
+        "name": name,
+        "age": age,
+        "gender": gender,
+        "email": email,
+        "phone": phone,
+        "course": course,
+        "semester": semester,
+        "cgpa": cgpa,
+        "city": city
+    }
+    add(student)

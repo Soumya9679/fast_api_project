@@ -1,13 +1,18 @@
 from fastapi import HTTPException
-
-items_db = {
-    'Soumya': {'name': 'Book', 'price': 29.99},
-    'Ankita': {'name': 'Laptop', 'price': 1999.99},
-    'Souvik': {'name': 'Keyboard', 'price': 49.99}
-}
+from data_loader import load_data
+from data_loader import save_data
 
 def read(name):
-    if name not in items_db:
-        raise HTTPException(status_code=404, detail="Item not found")
-    else:
-        return items_db[name]
+    students = load_data()
+    for student in students:
+        if student['name'] == name:
+            return student
+    raise HTTPException(status_code=404, detail="Item not found")
+
+def add(student):
+    students = load_data()
+    students.append(student)
+    save_data(students)
+    return student
+
+    
