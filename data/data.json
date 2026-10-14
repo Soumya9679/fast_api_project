@@ -119,6 +119,18 @@
             "semester": 6,
             "cgpa": 9.0,
             "city": "Kolkata"
+        },
+        {
+            "name": "Rahul Sharma",
+            "age": 20,
+            "gender": "Male",
+            "email": "rahul@example.com",
+            "phone": "9876543210",
+            "course": "B.Tech IT",
+            "semester": 5,
+            "cgpa": 8.5,
+            "city": "Kolkata",
+            "id": 11
         }
     ]
 }

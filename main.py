@@ -1,11 +1,11 @@
 from fastapi import FastAPI, HTTPException, Path, Query, Body
-from helper import read, add
+from helper import read, add, delete
 app = FastAPI()
 
 
 @app.get('/')
 def read_root():
-    return {"Hello": "World"}
+    return {"message": "Welcome to the API"}
 
 @app.get('/{name}')
 def read_name(name:str = Path(..., description="The name to be greeted")):
@@ -32,3 +32,7 @@ def add_student(name:str = Body(..., description="The name of the student"), age
         "city": city
     }
     add(student)
+
+@app.delete('/delete')
+def delete_student(name:str = Body(..., description="The name of the student")):
+    delete(name)

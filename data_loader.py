@@ -10,5 +10,8 @@ def load_data():
         return students
 
 def save_data(students):
+    student_data = {
+        "students": students
+    }
     with open("data/data.json", "w") as f:
-        json.dump(students, f, indent=4)
+        json.dump(student_data, f, indent=4)
